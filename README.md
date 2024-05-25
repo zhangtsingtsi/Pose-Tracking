@@ -2,6 +2,7 @@
 This repo is about pose tracking.
 
 ## Installation
+Environment
 ```
 Python >= 3.8
 Pytorch
