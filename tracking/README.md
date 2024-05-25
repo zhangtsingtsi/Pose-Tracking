@@ -114,6 +114,9 @@ but if you only want to import the tracking modules you can simply:
 
 ```
 pip install boxmot
+
+# pip install ultralytics
+# pip install sahi
 ```
 
 ## YOLOv8 | YOLO-NAS | YOLOX examples

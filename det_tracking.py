@@ -11,14 +11,14 @@ from sahi.predict import get_sliced_prediction
 
 
 tracker = DeepOCSORT(
-    model_weights=Path('osnet_x0_25_msmt17.pt'), # which ReID model to use
+    model_weights=Path('./tracking/osnet_x0_25_msmt17.pt'), # which ReID model to use
     device='cuda:0',
     fp16=False,
 )
 
 detection_model = AutoDetectionModel.from_pretrained(
-    model_type='yolov8',  # yolov5
-    model_path='yolov8l.pt',
+    model_type='yolov8',
+    model_path='./tracking/yolov8l.pt',
     confidence_threshold=0.75,
     device='cuda:0',  # or 'cuda:0'
 )
@@ -85,8 +85,3 @@ videoclip.release()
 writer.release()
 cv2.destroyAllWindows()
 print('Finish!')
-
-
-# pip install boxmot
-# pip install ultralytics
-# pip install sahi
