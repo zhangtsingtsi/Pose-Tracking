@@ -2,6 +2,10 @@
 This repo is about pose tracking.
 
 ## Installation
+```
+Python >= 3.8
+Pytorch
+```
 1. Install from source
 ```
 git clone https://github.com/zhangtsingtsi/Pose-Tracking.git
